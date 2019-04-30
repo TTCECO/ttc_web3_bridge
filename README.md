@@ -20,6 +20,7 @@ const ttc_web3_bridge = require('ttc_web3_bridge');
 ttc_web3 = ttc_web3_bridge.initWeb3(Your_RPC_HOST);
 ```
 You can use TTC Blockchain public rpc as your rpc host
+
 Mainnet http://rpc-tokyo.ttcnet.io / http://rpc-us.ttcnet.io
 
 Testnet http://testnet-tokyo.ttcnet.io
@@ -117,7 +118,7 @@ ttc_web3_bridge.sendRawTransaction(raw_tx,private_key,function(error, result){
 ```bash
 // compiled solidity source code
 var bytecode = "<Byte Code>";
-var contract_abi = [];
+var contract_abi = <YOUR CONTRACT ABI>;
 
 var private_key = "<YOUR PRIVATEKEY>";
 var from = "<YOUR ADDRESS>";
@@ -139,7 +140,7 @@ ttc_web3_bridge.deployContract(contract_abi, bytecode, args, raw_tx, private_key
 ### Call contract
 #### Read data from contract
 ```bash
-var contract_abi = [];
+var contract_abi = <YOUR CONTRACT ABI>;
 var contract_address = "<CONTRACT ADDRESS>";
 var function_name = "<FUNCTION NAME>";
 var args = [];
@@ -152,7 +153,7 @@ ttc_web3_bridge.callAndReadContract(contract_address, contract_abi,function_name
 var private_key = "<YOUR PRIVATEKEY>";
 var from = "<YOUR ADDRESS>";
 var contract_address = "<CONTRACT ADDRESS>";
-var contract_abi = [];
+var contract_abi = <YOUR CONTRACT ABI>;
 var function_name = "<FUNCTION NAME>";
 var args = [];
 
