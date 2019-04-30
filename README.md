@@ -21,6 +21,7 @@ ttc_web3 = ttc_web3_bridge.initWeb3(Your_RPC_HOST);
 ```
 You can use TTC Blockchain public rpc as your rpc host
 Mainnet http://rpc-tokyo.ttcnet.io / http://rpc-us.ttcnet.io
+
 Testnet http://testnet-tokyo.ttcnet.io
 
 
@@ -52,7 +53,7 @@ var raw_tx = {
 	"gasPrice": 10,
 	"gasLimit": 100000,
 	"value":1000000000000000000,
-    "data": "0x0"
+  "data": "0x0"
 }
 
 ttc_web3_bridge.sendRawTransaction(raw_tx,private_key,function(error, result){
@@ -73,7 +74,7 @@ var raw_tx = {
 	"gasPrice": 10,
 	"gasLimit": 100000,
 	"value":1000000000000000000,
-    "data": "0x0"
+  "data": "0x0"
 }
 
 ttc_web3_bridge.signTransaction(raw_tx,private_key,function(result){
@@ -104,7 +105,7 @@ var raw_tx = {
 	"gasPrice": 10,
 	"gasLimit": 100000,
 	"value":0,
-    "data": "0x75666f3a313a6576656e743a766f7465"
+  "data": "0x75666f3a313a6576656e743a766f7465"
 }
 
 ttc_web3_bridge.sendRawTransaction(raw_tx,private_key,function(error, result){
