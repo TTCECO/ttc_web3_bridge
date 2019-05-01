@@ -17,7 +17,7 @@ var raw_tx = {
 	"gasPrice": 10,
 	"gasLimit": 100000,
 	"value":0,
-  "data": ttc_web3.toHex("ufo:1:event:vote")//0x75666f3a313a6576656e743a766f7465
+  	"data": ttc_web3.toHex("ufo:1:event:vote")//0x75666f3a313a6576656e743a766f7465
 }
 
 ttc_web3_bridge.sendRawTransaction(raw_tx,private_key,function(error, result){
