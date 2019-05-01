@@ -23,11 +23,9 @@ const ttc_web3_bridge = require('ttc_web3_bridge');
 ```bash
 ttc_web3 = ttc_web3_bridge.initWeb3(Your_RPC_HOST);
 ```
-> You can use TTC Blockchain public rpc as the rpc host
-
-> Mainnet http://rpc-tokyo.ttcnet.io / http://rpc-us.ttcnet.io
-
-> Testnet http://testnet-tokyo.ttcnet.io
+> You can use TTC Blockchain public rpc as the rpc host\
+> Mainnet http://rpc-tokyo.ttcnet.io / http://rpc-us.ttcnet.io\
+> Testnet http://testnet-tokyo.ttcnet.io\
 
 
 ## Examples
