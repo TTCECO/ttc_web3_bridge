@@ -17,7 +17,7 @@ var raw_tx = {
 	"gasPrice": 10,
 	"gasLimit": 100000,
 	"value":1000000000000000000,
-  "data": "0x0"
+  	"data": "0x0"
 }
 
 ttc_web3_bridge.signTransaction(raw_tx,private_key,function(result){
