@@ -7,8 +7,8 @@ const RPC_HOST = "http://rpc-testnet.ttcnet.io";
 
 let ttc_web3_bridge = new TTC_Web3_Bridge(RPC_HOST)
 
-//Get nonce, supports, pending、latest
-const address = "t0fdbd5d6F633e29CC0Ebecb4fB3A3C8d27c4c6e4b";
-ttc_web3_bridge.getTransactionCount(address,function(error, nonce){
-	console.log(nonce);
-});
+//return privatekey and adddress
+const private_key = "<YOUR PRIVATEKEY>";
+
+const address_info = ttc_web3_bridge.privateKeyToAccount(private_key);
+console.log(address_info);

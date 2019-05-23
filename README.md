@@ -17,12 +17,15 @@ npm rebuild
 
 ### Creating an Instance
 ```bash
-const ttc_web3_bridge = require('ttc_web3_bridge');
+var TTC_Web3_Bridge = require('ttc_web3_bridge');
 ```
 ### Connect to TTC Blockchain
+
 ```bash
-ttc_web3 = ttc_web3_bridge.initWeb3(Your_RPC_HOST);
+var ttc_web3_bridge = new TTC_Web3_Bridge(RPC_HOST)
 ```
+> TTC_Web3_Bridge.initWeb3() has been deprecated
+
 > You can use TTC Blockchain public rpc as the rpc host \
 > Mainnet http://rpc-tokyo.ttcnet.io / http://rpc-us.ttcnet.io \
 > Testnet http://rpc-testnet.ttcnet.io
@@ -35,7 +38,11 @@ ttc_web3 = ttc_web3_bridge.initWeb3(Your_RPC_HOST);
 var account = ttc_web3_bridge.createAccount();
 console.log(account);
 ```
-
+#### Create account by privateKey  
+```
+var private_key = "<YOUR PRIVATEKEY>";
+var address_info =  ttc_web3_bridge.privateKeyToAccount(privateKey);
+```
 ### Get TTC balance
 ```bash
 var address = "<ADDRESS>";
