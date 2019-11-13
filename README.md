@@ -3,7 +3,7 @@ TTC blockchain JavaScript API is simply bridged based on Web3.js
 ## Basics
 
 ### Requirements
-You need to have [Node.js](https://nodejs.org/) 7.5.0+
+You need to have [Node.js](https://nodejs.org/) 10.10.0+
 
 ### Installation
 Run the following commands in your project folder:
