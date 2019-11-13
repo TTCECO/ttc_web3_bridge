@@ -11,7 +11,7 @@ Run the following commands in your project folder:
 npm install ttc_web3_bridge
 cd ./node_modules/ttc_web3_bridge // cd <YOUR_NODE_MODULES_LOCATION>/ttc_web3_bridge
 npm install
-npm rebuild
+npm run rebuild
 
 ```
 
