@@ -136,7 +136,7 @@ var raw_tx = {
 	"from": from,
 	"nonce": 99,
 	"gasPrice": 10,
-	"gasLimit": 1000000,
+	"gasLimit": 3000000,
 	"value":0,
 }
 var args = [];
