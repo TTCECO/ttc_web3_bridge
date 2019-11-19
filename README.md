@@ -166,6 +166,15 @@ var contract_abi = <YOUR CONTRACT ABI>;
 var function_name = "<FUNCTION NAME>";
 var args = [];
 
+var raw_tx = {
+	"from": from,
+	"to": contract_address,
+	"nonce": 99,
+	"gasPrice": 10,
+	"gasLimit": 1000000,
+	"value":0
+}
+
 ttc_web3_bridge.callAndWriteContract(raw_tx, private_key, contract_address, contract_abi, function_name, args, function(error,result){
    console.log(result);
 });
